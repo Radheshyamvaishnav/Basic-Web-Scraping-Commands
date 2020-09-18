@@ -8,14 +8,14 @@ r = requests.get(url)
 
 html_content = r.content
 
-# print(html_content)
+# print(html_content)     # It will print all the contents of html
 
 # Step 2 : Parse the Html
 
 soup = BeautifulSoup(html_content, "html.parser")
 
 # print(soup)
-# print(soup.prettify)
+# print(soup.prettify)       #   .prettify is used to give proper format to content
 #
 # for items in soup.stripped_strings:
 #
@@ -49,7 +49,7 @@ soup = BeautifulSoup(html_content, "html.parser")
 
 # get all the link in page
 # for link in anchor:
-#     if(link.get('href') != '#'):                 #This is used to not to print href with #
+#     if(link.get('href') != '#'):                 # here we can print all the href links expect the one with # .
 #         all_links.add( url + link.get('href'))
 #
 # print(all_links)
