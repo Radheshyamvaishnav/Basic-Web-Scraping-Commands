@@ -67,6 +67,6 @@ soup = BeautifulSoup(html_content, "html.parser")
 
 # CSS Selectors
 
-# print(soup.select(""))  #used to select css elements
+print(soup.select(""))  #used to select css elements
 
 
